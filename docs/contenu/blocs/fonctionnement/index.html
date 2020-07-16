@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fonctionnement de l&rsquo;éditeur de bloc #  L&rsquo;éditeur de blocs fonctionne comme un aggrégateur de forumlaires. Différents types de champs pré-établis sont mis à disposition et vous pouvez choisir parmi l&rsquo;un ou l&rsquo;autre bloc, les enchaîner, les déplacer, les supprimer, etc.
+Cette section couvre les détails techniques ce concernant pour que vous puissiez passer à la création le plus vite possible. De plus, comme le reste du Panel, l&rsquo;éditeur de blocs est très intuitif.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Fonctionnement de l&#39;éditeur de bloc" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://documentation.inact.fr/docs/contenu/blocs/fonctionnement/" />
+
+<title>Fonctionnement de l&#39;éditeur de bloc | Inact Documentation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6cd8553a6854f4812343f0f0c8baca31271e686434f381fbe3c7226f66639176.css" integrity="sha256-bNhVOmhU9IEjQ/DwyLrKMSceaGQ084H748cib2ZjkXY=">
+<script defer src="/en.search.min.f6dfe4dbb0075a99cae52e1c09f18d1a472ee461c7993a20726121e73580cc9e.js" integrity="sha256-9t/k27AHWpnK5S4cCfGNGkcu5GHHmTogcmEh5zWAzJ4="></script>
+<link rel="alternate" type="application/rss+xml" href="https://documentation.inact.fr/docs/contenu/blocs/fonctionnement/index.xml" title="Inact Documentation" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Inact Documentation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/" class="">Le Panel</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/connect/" class="">Connexion et déconnexion</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/interface/" class="">Interface</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/utilisateurs/" class="collapsed ">Comptes utilisateur·ice·s</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/" class="">Le Contenu</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/pages/" class="collapsed ">Pages et publications</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/markdown/" class="">Le Markdown</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/kirbytext/" class="">Contenu dynamique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/fichiers/" class="collapsed ">Fichiers</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/blocs/" class="collapsed ">Blocs de page</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/blocs/fonctionnement/" class="active">Fonctionnement de l&#39;éditeur de bloc</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/blocs/types/" class="">Différents types de blocs</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Fonctionnement de l&#39;éditeur de bloc</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#fonctionnement-de-léditeur-de-bloc">Fonctionnement de l&rsquo;éditeur de bloc</a>
+      <ul>
+        <li><a href="#le-bloc-vide">Le bloc vide</a></li>
+        <li><a href="#ajouter-un-bloc">Ajouter un bloc</a></li>
+        <li><a href="#aspect-dun-bloc">Aspect d&rsquo;un bloc</a></li>
+        <li><a href="#déplacer-les-blocs">Déplacer les blocs</a></li>
+        <li><a href="#options-des-blocs">Options des blocs</a></li>
+        <li><a href="#ajouter-un-bloc-entre-deux-blocs">Ajouter un bloc entre deux blocs</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="fonctionnement-de-léditeur-de-bloc">
+  Fonctionnement de l&rsquo;éditeur de bloc
+  <a class="anchor" href="#fonctionnement-de-l%c3%a9diteur-de-bloc">#</a>
+</h1>
+<p>L&rsquo;éditeur de blocs fonctionne comme un <strong>aggrégateur de forumlaires</strong>. Différents types de champs pré-établis sont mis à disposition et vous pouvez choisir parmi l&rsquo;un ou l&rsquo;autre bloc, les enchaîner, les déplacer, les supprimer, etc.</p>
+<p>Cette section couvre les détails techniques ce concernant pour que vous puissiez passer à la création le plus vite possible. De plus, comme le reste du Panel, l&rsquo;éditeur de blocs est très intuitif.</p>
+<h2 id="le-bloc-vide">
+  Le bloc vide
+  <a class="anchor" href="#le-bloc-vide">#</a>
+</h2>
+<p>De prime abord, vous allez être confronté à une vide, et à un bouton <code>+ ajouter</code> à partir duquel vous pourrez ajouter votre premier bloc à la page. Au survol, la zone devient bleue.</p>
+<p>
+  <img src="bloc_work_empty.png" alt="L&amp;rsquo;éditeur de bloc vide" /></p>
+<hr>
+<h2 id="ajouter-un-bloc">
+  Ajouter un bloc
+  <a class="anchor" href="#ajouter-un-bloc">#</a>
+</h2>
+<p>Cliquer sur le bouton <code>+ ajouter</code> fait appraître une boîte modale à partir de laquelle vous pouvez choisir quel bloc vous souhaitez ajouter à la page. Vous pouvez alors selectionner un bloc et cliquez sur le bouton <code>+</code>.</p>
+<p>Pour savoir quel type de bloc choisir, rendez-vous sur la page 
+  <a href="/docs/contenu/blocs/types/">Différents types de blocs</a>.</p>
+<p>
+  <img src="bloc_work_choose.png" alt="Formulaire de bloc" /></p>
+<hr>
+<h2 id="aspect-dun-bloc">
+  Aspect d&rsquo;un bloc
+  <a class="anchor" href="#aspect-dun-bloc">#</a>
+</h2>
+<p>Votre premier bloc ajouté, il vous présente un formulaire vide à remplir, similaire à tous les autres formulaires du Panel. En dessous du formulaire, vous retrouvez à nouveau le bouton <code>+ ajouter</code>, qui vous permet d&rsquo;additionner un nouveau bloc à la page, et ainsi de suite.</p>
+<p>Dans l&rsquo;exemple suivant, un bloc <strong>Chapô</strong> à été ajouté à la page.</p>
+<p>
+  <img src="bloc_work_one.png" alt="L&amp;rsquo;éditeur de bloc avec un seul bloc" /></p>
+<p>Ensuite, un nouveau bloc <strong>Article</strong> à été ajouté en dessous de celui-ci.</p>
+<p>
+  <img src="bloc_work_two.png" alt="L&amp;rsquo;éditeur de bloc avec deux blocs" /></p>
+<hr>
+<h2 id="déplacer-les-blocs">
+  Déplacer les blocs
+  <a class="anchor" href="#d%c3%a9placer-les-blocs">#</a>
+</h2>
+<p>À gauche des blocs, vous retrouvez un bouton <code>Déplacer</code>, composé de six petits carrés grisés. Si vous cliquez dessus, vous pourrez déplacer les blocs les uns au dessus des autres, remontrer ou descendre un bloc, etc.</p>
+<p>
+  <img src="bloc_work_drag.png" alt="Zoom sur le bouton déplacer d&amp;rsquo;un bloc" /></p>
+<hr>
+<h2 id="options-des-blocs">
+  Options des blocs
+  <a class="anchor" href="#options-des-blocs">#</a>
+</h2>
+<p>À droite des blocs, se trouve le bouton <code>…</code> des options supplémentaires. Il fait apparaître un menu déroulant avec de nouvelles options pour le bloc.</p>
+<p>
+  <img src="bloc_work_menu.png" alt="L&amp;rsquo;éditeur de bloc vide" /></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dupliquer</td>
+<td>Ce bouton vous permet de <strong>créer une copie conforme du bloc</strong> juste en dessous de celui-ci. Utile si vous souhaitez créer des blocs à la chaîne, ou pour reproduire un bloc en particulier</td>
+</tr>
+<tr>
+<td>Supprimer</td>
+<td>Ce bouton vous permet de <strong>supprimer définitivement un bloc</strong>, et d&rsquo;effacer son contenu.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="ajouter-un-bloc-entre-deux-blocs">
+  Ajouter un bloc entre deux blocs
+  <a class="anchor" href="#ajouter-un-bloc-entre-deux-blocs">#</a>
+</h2>
+<p>Si vous passez la souris entre deux blocs, vous verrez apparaître <strong>une ligne pointillée bleue</strong>. C&rsquo;est une raccourci pour ajouter un nouveau bloc entre deux blocs existants.</p>
+<p>
+  <img src="bloc_work_middle.png" alt="L&amp;rsquo;éditeur de bloc vide" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/1f8e791b40cddd7da944de230236518f8889ca34" title='Last modified by wizhou | July 16, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>July 16, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite//docs/contenu/blocs/fonctionnement/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#fonctionnement-de-léditeur-de-bloc">Fonctionnement de l&rsquo;éditeur de bloc</a>
+      <ul>
+        <li><a href="#le-bloc-vide">Le bloc vide</a></li>
+        <li><a href="#ajouter-un-bloc">Ajouter un bloc</a></li>
+        <li><a href="#aspect-dun-bloc">Aspect d&rsquo;un bloc</a></li>
+        <li><a href="#déplacer-les-blocs">Déplacer les blocs</a></li>
+        <li><a href="#options-des-blocs">Options des blocs</a></li>
+        <li><a href="#ajouter-un-bloc-entre-deux-blocs">Ajouter un bloc entre deux blocs</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
