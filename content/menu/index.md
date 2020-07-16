@@ -1,6 +1,14 @@
 ---
 headless: true
 ---
+- [**Le Panel**]({{< relref "/docs/panel" >}})
+  - [Connexion et déconnexion]({{< relref "/docs/panel/connect" >}})
+  - [Interface]({{< relref "/docs/panel/interface" >}})
+  - [Compte utilisateur·ice]({{< relref "/docs/panel/utilisateurs" >}})
+    - [Pages utilisateur·ice]({{< relref "/docs/panel/utilisateurs/pages" >}})
+    - [Actions de compte]({{< relref "/docs/panel/utilisateurs/actions" >}})
+
+- [**Le Contenu**]({{< relref "/docs/contenu" >}})
 
 - [**Example Site**]({{< relref "/docs/example" >}})
 - [Table of Contents]({{< relref "/docs/example/table-of-contents" >}})

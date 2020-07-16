@@ -3,6 +3,7 @@ languageCode = "fr-FR"
 title = "Inact Documentation"
 theme= "book"
 
+disableKinds = ['taxonomy', 'taxonomyTerm']
 
 # Book configuration
 disablePathToLower = true
@@ -69,12 +70,12 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  # BookRepo = 'https://github.com/alex-shpak/hugo-book'
+  BookRepo = 'https://github.com/alex-shpak/hugo-book'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  # BookEditPath = 'edit/master/exampleSite'
+  BookEditPath = 'edit/master/exampleSite'
 
   # Configure the date format used on the pages
   # - In git information
@@ -90,7 +91,7 @@ enableGitInfo = true
   # By default partals/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
-  BookComments = true
+  BookComments = false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
