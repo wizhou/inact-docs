@@ -29,4 +29,4 @@ echo "Pushing to github"
 git push --all
 
 echo "Push to live"
-git-ftp push -s prod
+git-ftp push -s prod -b build
