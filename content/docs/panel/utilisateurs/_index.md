@@ -18,7 +18,7 @@ Il n’est **pas recommandé** d’employer un seul compte utilistateur·ice pou
 
 {{< columns >}}
 
-### Pages utilisateur·ice
+## Pages utilisateur·ice
 
 Vous pouvez gérer les utilisateur·ice·s du site depuis deux types de page distinct. Soit la page personnelle de chaque utilisateur·ice, soit la page d'ensemble de tous les utilisateur·ice·s.
 
@@ -26,7 +26,7 @@ Vous pouvez gérer les utilisateur·ice·s du site depuis deux types de page dis
 
 <--->
 
-### Actions de compte
+## Actions de compte
 
 Chaque compte peut être **créé**, **modifé** ou **supprimé**, cette section détaille ces différentes actions.
 

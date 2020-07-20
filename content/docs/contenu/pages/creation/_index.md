@@ -48,6 +48,8 @@ Pour comprendre le lien entre l'identifiant d'une page et son URL, il faut compr
 2. Une page de premier niveau, ou positionnée directement à la racine, **vera son identifiant placé juste après l'URL de la racine**. Ainsi ```www.inact.fr/contact``` pour la page Contact, ```www.inact.fr/archives``` pour la page Archives.
 3. Une page située à l'intérieur d'une page de premier niveau vera son identifiant ajouté à la suite de celui de sa page parente. Par exemple, l'URL suivante : ```www.inact.fr/archives/l-epaisseur-de-la-transparence``` représente la page **L'épaisseur de la transparence** qui est située au sein de la page **Archive** qui est une page de premier niveau du site.
 
+Dans un autre exemple, si vous créez un dossier nommé ```blog``` comme enfant direct de la racine, cette page sera accessible depuis l'URL ```https:://inact.fr/blog```, etc.
+
 Dans cette logique, le schéma de page suivant :
 
 ```

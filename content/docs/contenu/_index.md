@@ -5,21 +5,54 @@ type: docs
 weight: 2
 ---
 
-# Le Contenu [WIP]
+# Le Contenu
 
-Cette section traite de la création et de l'édition du contenu au sein du Panel. Vous y trouverez des informations sur les contraintes techniques nécessaires à l'édition, le savoir de base à acquérir pour modifier le site internet et le les balisages textes essentiels.
+Cette section traite de la création et de l'édition du contenu au sein du **Panel**. Vous y trouverez des informations sur les contraintes techniques nécessaires à l'édition, le savoir de base à acquérir pour modifier le site internet et le les balisages textes essentiels.
 
-Kirby est un *flat file* C.M.S, c'est-à-dire qu'il ne s'appuie pas sur une base de données pour ordonner le contenu du site internet, mais sur une structure arborescente, comme celle des dossiers d'un ordinateur. Chaque page représente un dossier, dans lequel sont placé un fichier texte et des images, qui sont le contenu de la page. Ce dossier peut contenir des sous-dossiers, qui sont ici des sous-pages, qui contiennent eux-mêmes des fichiers textes et des images, et peuvent aussi contenir des sous-pages, etc.
+----
 
-Une page contenant des sous-pages est appellée une **page parente**, et ses sous-pages sont des **pages enfants**. Dans cette logique, une page peut être parente de pluiseurs sous-pages et également enfant d'une autre page.
+{{<columns>}}
 
+## Les pages
 
-Vous y trouverez des informations importante concernant le [Markdown](), le langage de formatage utilisé par le Panel pour baliser le texte du site.
+Les pages sont au cœur du fonctionnement du site internet. Comprendre comment les **manipuler**, leur **statuts** spécifiques, leur organisatione et comment **travailler à plusieurs** avec est essentiel.
 
-Également, un centre de ressource concernant le contenu dynamique et le Kirbytext, utilisé pour intégrer des éléments interactifs et dynamiques dans les pages, commes des fichiers, des images, des vidéos ou des sons.
+{{<button relref="/docs/contenu/pages">}}En savoir plus{{</button>}}
 
-Ainsi, à différents endroits du Panel, vous aurez la possibilité de **modifier**, de **créer** ou de **supprimer** des page.
+<--->
 
-Les pages contiennent des informations textuelles que vous serez amené à modifier.
+## Le markdown
 
-Les pages peuvent contenir n'importe quel nombre d'images, de vidéos, de documents ou tout autre fichier. Ces fichiers sont stockés directement dans le dossier de la page.
+Le site internet utilise le langage de markage **Markdown** qui permet de travailler très facilement et efficacement avec le texte et le marquage des pages.
+
+{{<button relref="/docs/contenu/markdown">}}En savoir plus{{</button>}}
+
+{{</columns>}}
+
+----
+
+{{<columns>}}
+
+## Le contenu dynamique
+
+En plus d'éléments de balisage, vous pouvez **ajouter des éléments dynamique** au pages, comme des **images**, des **vidéos**, des **pistes audios**, et cela avec juste quelques lignes de textes.
+
+{{<button relref="/docs/contenu/kirbytext">}}En savoir plus{{</button>}}
+
+<--->
+
+## Les fichiers
+
+Les pages peuvent contenir **n'importe quel nombre de fichier**. Ces fichiers sont stockés directement dans le dossier de la page. Vous pouvez les organisez, les annoter et les utiliser à plusieurs endroits dans les pages.
+
+{{<button relref="/docs/contenu/fichiers/">}}En savoir plus{{</button>}}
+
+{{</columns>}}
+
+----
+
+## Les blocs de pages
+
+Le panel vous permet de **créer et d'organiser vos pages** à partir de blocs de contenu pré-défini. Grâce à eux, vous pouvez créer des pages dynamiques et efficaces, de façon très souple.
+
+{{<button relref="/docs/contenu/blocs/">}}En savoir plus{{</button>}}

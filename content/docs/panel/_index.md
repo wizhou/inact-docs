@@ -21,26 +21,30 @@ Si vous êtes familier·ère·s avec **Kirby 3**, la structure du site d’INACT
 
 {{< columns >}}
 
-### Se connecter au Panel
+## Se connecter au Panel
 
-Pour modifier le site internet, vous avez besoin de vous connecter au Panel
+Pour modifier le site internet, vous avez besoin de vous **connecter au Panel** et d'accéder au *back-office*.
 
 {{< button relref="/docs/panel/connect/" >}}En savoir plus{{< /button >}}
 
 <--->
 
-### Interface du Panel
+## Interface du Panel
 
-Le Panel est possède une interface très intuitive, mais quelques éléments sont à connaître pour l'utiliser à sa pleine capacité.
+Le Panel est possède une **interface très intuitive**, mais quelques éléments sont à connaître pour l'utiliser à sa pleine capacité.
 
 {{< button relref="/docs/panel/interface/" >}}En savoir plus{{< /button >}}
 
-<--->
+{{< /columns >}}
 
-### Compte utilisateur·ice
+----
+
+{{< columns >}}
+
+## Compte utilisateur·ice
 
 Pour vous connecter au Panel, vous avez besoin d’un compte utilisateur·ice.
 
 {{< button relref="/docs/panel/utilisateurs/" >}}En savoir plus{{< /button >}}
-
+<--->
 {{< /columns >}}

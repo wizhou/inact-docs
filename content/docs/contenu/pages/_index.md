@@ -11,26 +11,62 @@ Toutes les interactions que vous aurez avec le contenu du site internet au trave
 
 Chaque page comporte des possibilités d'édition différentes, liée à son importance dans la hiérarchie du site internet. Cette section détaille les informations essentielles et communes à toutes les pages du site internet.
 
-## Statut des pages
+Puisque Kirby est un *flat file* C.M.S [^1], tout le contenu est stocké dans des fichiers et des dossiers contenu au sein du dossier ```content```, la racine du site. Chaque dossier correspond à une page du site internet au sens propre, contient ses éléments de contenu (comme des fichiers images), et est accessible depuis son propre URL.
 
-Les status des pages vous permettent plus de contrôle sur le processus de publication. Des **brouillons**, aux **pages non listées** jusqu'au **pages publiques** (ou publiées) chaque status défini le comportement de la page au sein du site.
+[^1]: un *flat file* C.M.S ne s'appuie pas sur une base de données pour ordonner le contenu du site internet, mais plutôt sur un ensemble de fichiers texte ordonnés dans une arborescence.
 
-[> En savoir plus]({{<relref "/docs/contenu/pages/statuts/">}})
+Chaque dossier peut contenir des sous-dossiers, qui deviennent des sous-pages, etc. Ils contiennent eux-mêmes des fichiers textes et des images, et peuvent également contenir des sous-pages, et ainsi augmenter l'arborescence.
 
-****
+Une page contenant des sous-pages est appellée une **page parente**, et ses sous-pages sont des **pages enfants**. Dans cette logique, une page peut être parente de plusieurs sous-pages et également enfant d'une autre page.
 
-## Création, modification et suppression des pages
+----
 
-Dans le Panel, vous interagissez avec des pages. En plus de modifier leur contenu, vous allez devoir définir les paramètres essentiels à la bonne tenue des pages dans le site internet. Cette section vous explique **comment créer une page**, comment **modifier ses paramètres** et comment **la supprimer**.
+{{<columns>}}
 
-[> Créer des pages]({{<relref "/docs/contenu/pages/creation/">}})
+## Statut
 
-[> Modifier ou supprimer des pages]({{<relref "/docs/contenu/pages/parametres/">}})
+Les status des pages vous permettent plus de contrôle sur le processus de publication. Chaque statut défini le comportement de la page au sein du site.
 
-***
+{{<button relref="/docs/contenu/pages/statuts/">}}En savoir plus{{</button>}}
+
+<--->
+
+## Sections de pages
+
+Au sein du Panel, vous rencontrerez réguilièrement des sections regroupant différentes pages. Ce sont les sections de pages.
+
+{{<button relref="/docs/contenu/pages/sections/">}}En savoir plus{{</button>}}
+
+{{</columns>}}
+
+----
+
+{{<columns>}}
+
+## Créer des pages
+
+Dans le Panel, vous interagissez avec des pages. Il est important de comprendre comment les créer et les organiser.
+
+{{<button relref="/docs/contenu/pages/creation/">}}En savoir plus{{</button>}}
+
+
+<--->
+
+## Modifier et supprimer des pages
+
+Vous allez devoir définir les paramètres essentiels à la bonne tenue des pages dans le site internet.
+
+{{<button relref="/docs/contenu/pages/parametres/">}}En savoir plus{{</button>}}
+
+{{</columns>}}
+
+----
 
 ## Processus de travail collaboratif
 
 Kirby possède quelques gardes-fou et systèmes de travail collaboratif à connaître pour utiliser le C.M.S. le mieux possible. Ainsi, lorsque vous travaillez sur le Panel, **vos changement sont sauvegardés** et **la page est **vérouillée**. Et lorsque vous vous connectez, vous pouvez voir les changement en cours et ce qui se fait actuellement.
 
-[> En savoir plus]({{<relref "/docs/contenu/pages/edition">}})
+{{<button relref="/docs/contenu/pages/edition/">}}En savoir plus{{</button>}}
+
+<br>
+<br>
