@@ -41,12 +41,12 @@ enableGitInfo = true
 # [[menu.before]]
 [[menu.after]]
   name = "Github"
-  url = "https://github.com/alex-shpak/hugo-book"
+  url = "https://github.com/wizhou/inact-docs"
   weight = 10
 
 [[menu.after]]
-  name = "Hugo Themes"
-  url = "https://themes.gohugo.io/hugo-book/"
+  name = "inact.fr"
+  url = "https://www.inact.fr/"
   weight = 20
 
 [params]
