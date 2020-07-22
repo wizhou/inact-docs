@@ -1,0 +1,63 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      
+    - name: Checkout Repo
+      uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: Build Site
+      uses: chabad360/hugo-actions@master
+      with:
+        buildPath: 'public'
+        # Use if you have a need to build the site to another directory
+        # hugoVersion: 'extended_0.58.3'
+        # Use if your site requires a specific version of Hugo
+        # Append "extended_" to the begining to use Hugo Extended
+        args: --gc --minify --cleanDestinationDir
+        # Use if you want to pass some custom arguments to Hugo
+      
+    - name: Deploy to build branch
+      uses: crazy-max/ghaction-github-pages@v2.1.0
+      with:
+        # Git branch where assets will be deployed
+        target_branch: build
+        # Create incremental commit instead of doing push force
+        keep_history: true
+        # Allow an empty commit to be created
+        allow_empty_commit: true
+        # Build directory to deploy
+        build_dir: public
+        # The committer name and email address
+        committer: GitHub Action
+        commit_message: Build and Deploy Hugo Site to build branch
+      env:
+        GITHUB_TOKEN: ${{ secrets.INACT_TOKEN }}
+    
+    - name: Deploy to documentation.inact.fr
+      uses: sebastianpopp/git-ftp-action@3.0.0
+      with:
+        # URL
+        url: ${{ secrets.INACT_FTP_URL }}
+        # FTP login name
+        user: ${{ secrets.INACT_FTP_USER }}
+        # FTP password
+        password: ${{ secrets.INACT_FTP_PASSWORD }}
+        # Specifies a local directory to sync from as if it were the git project root path.
+        # syncroot: # optional, default is .
+        # Additional options
+        # options: # optional, default is --auto-init
