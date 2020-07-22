@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-    - name: Checkout Repo
-      uses: actions/checkout@master
-      with:
-        submodules: false
+   # - name: Checkout Repo
+    #  uses: actions/checkout@master
+     # with:
+      #  submodules: false
 
     - name: Build Site
       uses: chabad360/hugo-actions@master
