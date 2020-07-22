@@ -33,6 +33,10 @@ jobs:
           publish_branch: build
           publish_dir: ./public
 
+      - uses: actions/checkout@v1
+        with:
+          ref: 'build'
+
       - name: Deploy to documentation.inact.fr
         uses: sebastianpopp/git-ftp-action@3.0.0
         with:
