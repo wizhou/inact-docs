@@ -18,7 +18,7 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@master
       with:
-        submodules: true
+        submodules: false
 
     - name: Build Site
       uses: chabad360/hugo-actions@master
